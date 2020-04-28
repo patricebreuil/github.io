@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<head>
 <script>
 function startTime() {
   var today = new Date();
@@ -17,14 +16,6 @@ function checkTime(i) {
   return i;
 }
 </script>
-<script>
-  n =  new Date();
-y = n.getFullYear();
-m = n.getMonth() + 1;
-d = n.getDate();
-  document.getElementById("date").innerHTML = d + "." + m + "." + y;
-</script>
-  <head>
 <style>
   .logo{
 border-left: 1px solid; grid-area: logo; }
@@ -45,8 +36,9 @@ border-left: 1px solid; grid-area: date; }
   
   .title {
     font-family: Surt-Medium;
-    font-size: 1em;
-    padding: 5% 5% 5% 5%;
+    font-size: 1.9vw;
+    padding: 2% 2% 2% 2%;
+    text-align: center;
   }
 
   .content{
@@ -65,7 +57,7 @@ border-left: 1px solid; grid-area: date; }
     background: none;
     display: grid;
     grid-template-columns:  1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0 1fr;
+    grid-template-rows: 1fr 90vh 1fr;
     justify-content: start;
     flex-direction: column;
     flex-wrap: wrap-reverse;
@@ -73,8 +65,18 @@ border-left: 1px solid; grid-area: date; }
       "logo about conditions treatments"
       "content content content content"
       "contact time date book";
+    
   }
+  
+.head{
+  border-bottom: 1px solid;
+}
+
+.footer{
+}
 </style>
+<head>
+  </head>
   <body  onload="startTime()">
 <div class="container">
   <div class="logo title head">HOLLINSHEAD PODITARY</div>
@@ -87,4 +89,5 @@ border-left: 1px solid; grid-area: date; }
   <div id="txt" class="time title footer"></div>
   <div class="book title footer">BOOK ONLINE</div>
 </div>
+   
 </body>
