@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<head>
 <script>
 function startTime() {
   var today = new Date();
@@ -16,6 +17,14 @@ function checkTime(i) {
   return i;
 }
 </script>
+<script>
+  n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+  document.getElementById("date").innerHTML = d + "." + m + "." + y;
+</script>
+  <head>
 <style>
   .logo{
 border-left: 1px solid; grid-area: logo; }
@@ -64,16 +73,8 @@ border-left: 1px solid; grid-area: date; }
       "logo about conditions treatments"
       "content content content content"
       "contact time date book";
-    
-  }
-  .head{
-  }
-  .footer{
-    
   }
 </style>
-<head>
-  </head>
   <body  onload="startTime()">
 <div class="container">
   <div class="logo title head">HOLLINSHEAD PODITARY</div>
