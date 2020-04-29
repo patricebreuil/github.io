@@ -36,7 +36,13 @@ border-left: 1px solid; grid-area: date; }
   
   .title {
     font-family: Surt-Medium;
-    font-size: 1.9vw;
+    font-size: 1.8vw;
+    padding: 2% 2% 2% 2%;
+    text-align: center;
+  }
+  .li {
+    font-family: Surt-Medium;
+    font-size: 1.2vw;
     padding: 2% 2% 2% 2%;
     text-align: center;
   }
@@ -50,13 +56,15 @@ border-left: 1px solid; grid-area: date; }
     flex-direction: column;
   }
   .container {
-    size: auto-fit;
-    height: 100%;
-    width: 100%;
+    posiition: fixed;
+    top: 1%;
+    bottom: 1%;
+    right: 1%;
+    left: 1%;
     background: none;
     display: grid;
     grid-template-columns:  1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 90vh 1fr;
+    grid-template-rows: 1fr 90% 1fr;
     justify-content: start;
     flex-direction: column;
     flex-wrap: wrap-reverse;
@@ -69,8 +77,8 @@ border-left: 1px solid; grid-area: date; }
 .head{
   border-bottom: 1px solid;
 }
-
 .footer{
+  border-bottom: 1px solid;
 }
 </style>
 <head>
@@ -81,7 +89,47 @@ border-left: 1px solid; grid-area: date; }
   <div class="about title head">ABOUT</div>
   <div class="conditions title head">CONDITIONS</div>
   <div class="treatments title head">TREATMENTS</div>
-  <div class="content"></div>
+  <div class="content1"></div>
+  <div class="content2"></div>
+  <div class="content3">
+     <a href="#"><li>ATHLETES FOOT</li></a>
+     <a href="#"><li>BLISTERS</li></a>
+     <a href="#"><li>CALLUSES</li></a>
+     <a href="#"><li>CAPSULITIS</li></a>
+     <a href="#"><li>CHILBLAINS</li></a>
+     <a href="#"><li>CORNS</li></a>
+     <a href="#"><li>DIABETIC FOOTCARE</li></a>
+     <a href="#"><li>FISSURED (CRACKED) HEELS</li></a>
+     <a href="#"><li>FUNGAL NAIL (ONYCHOMYCOSIS)</li></a>
+     <a href="#"><li>HAND WARTS</li></a>
+     <a href="#"><li>INGROWING TOENAILS</li></a>
+     <a href="#"><li>INVOLUTED NAILS</li></a>
+     <a href="#"><li>METATARSALGIA</li></a>
+     <a href="#"><li>MORTONS NEUROMA</li></a>
+     <a href="#"><li>PARONYCHIA</li></a>
+     <a href="#"><li>PLANTAR FASCIITIS (HEEL PAIN)</li></a>
+     <a href="#"><li>PREDISLOCATION SYNDROME</li></a>
+     <a href="#"><li>SKIN WOUNDS (NECROSIS)</li></a>
+     <a href="#"><li>SUBUNGAL HAEMATOMAS</li></a>
+     <a href="#"><li>THICKENED, DAMAGED NAILS</li></a>
+     <a href="#"><li>ULCERATIONS</li></a>
+     <a href="#"><li>VERRUCAE</li></a>
+    </div>
+  <div class="content4">
+   <a href="#"><li>BIOMECHANICAL EXAMINATION</li></a>
+     <a href="#"><li>CORTICO-STEROID INJECTIONS</li></a>
+     <a href="#"><li>CRYOTHERAPY</li></a>
+     <a href="#"><li>DERMOSCOPY</li></a>
+     <a href="#"><li>ELECTRO SURGICAL DESICCATION & HYFRECATION</li></a>
+     <a href="#"><li>LASER (FUNGAL NAIL INFECTIONS)</li></a>
+     <a href="#"><li>LASER (THREAD VEINS)</li></a>
+     <a href="#"><li>LASER  (WARTS AND VERRUCAE)</li></a>
+     <a href="#"><li>LOW LEVEL LASER TREATMENT (LLLT)</li></a>
+     <a href="#"><li>MULTIPLE PUNCTURE/DRY NEEDLING</li></a>
+     <a href="#"><li>NAIL SURGERY (PARTIAL NAIL AVULSION)</li></a>
+     <a href="#"><li>NAIL SURGERY (TOTAL NAIL AVULSION)</li></a>
+     <a href="#"><li>STANDARD APPOINTMENT</li></a>
+    </div>
   <div class="contact title footer">CONTACT</div>
   <div id="date" class="date title footer"></div>
   <div id="txt" class="time title footer"></div>
