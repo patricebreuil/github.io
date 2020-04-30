@@ -1,11 +1,10 @@
-<script>
+
 n = new Date();
 y = n.getFullYear();
 m = n.getMonth() + 1;
 d = n.getDate();
 document.getElementById("date").innerHTML = d + "." + m + "." + y;
-</script>
- <script>
+
 function startDate() {
 var n = new Date();
 var y = n.getFullYear();
@@ -14,8 +13,7 @@ var d = n.getDate();
 document.getElementById("date").innerHTML =
   d + "." + m + "." + y;
 }
-</script>
-<script>
+
 function startTime() {
   var today = new Date();
   var h = today.getHours();
@@ -31,4 +29,4 @@ function checkTime(i) {
   if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
   return i;
 }
-</script>
+
